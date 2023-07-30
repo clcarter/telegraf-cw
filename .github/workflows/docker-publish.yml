@@ -16,7 +16,7 @@ on:
 
 env:
   # github.repository as <account>/<repo>
-  IMAGE_NAME: "telegraph-cw"
+  IMAGE_NAME: "telegraf-cw"
 
 
 jobs:

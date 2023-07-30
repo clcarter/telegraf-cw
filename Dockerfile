@@ -1,3 +1,3 @@
 FROM telegraf:latest
 
-RUN ["/bin/bash", "-c", "apt update", "apt install -y --no-install-recommends smartmontools", "apt install -y --no-install-recommends lm-sensors", "apt install -y --no-install-recommends nvme-cli", "apt install -y --no-install-recommends ipmitool", "telegraf"]
+RUN ["/bin/bash", "-c", "apt update", "apt install -y --no-install-recommends smartmontools lm-sensors nvme-cli ipmitool && rm -rf /var/lib/apt/lists/* && telegraf"]
